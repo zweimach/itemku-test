@@ -1,0 +1,67 @@
+{
+  "name": "itemku-test",
+  "private": true,
+  "description": "zweimach's solutions for the software engineer recruitment test at Itemku",
+  "license": "MIT",
+  "author": "Ananda Umamil <zweimach@zweimach.org>",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "test-all": "npm-run-all -s lint typecheck test",
+    "typecheck": "tsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-jsdoc": "^30.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jest": "^26.2.2",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.7"
+  },
+  "prettier": {},
+  "eslintConfig": {
+    "env": {
+      "commonjs": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:prettier/recommended",
+      "plugin:jsdoc/recommended"
+    ],
+    "settings": {
+      "jsdoc": {
+        "mode": "typescript"
+      }
+    },
+    "overrides": [
+      {
+        "files": "*.es5.js",
+        "parserOptions": {
+          "ecmaVersion": 5
+        }
+      },
+      {
+        "files": [
+          "*.es6.js",
+          "*.test.js"
+        ],
+        "parserOptions": {
+          "ecmaVersion": 2015
+        }
+      },
+      {
+        "files": [
+          "*.test.js"
+        ],
+        "extends": [
+          "plugin:jest/recommended",
+          "plugin:jest/style"
+        ]
+      }
+    ]
+  }
+}
