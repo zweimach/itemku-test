@@ -26,9 +26,9 @@ When "Muzi" leaves the room, the following message is left:
 
 > "Muzi came in." "Prodo came in." "Muzi has left."
 
-When Muzi comes back in again with the new nickname, Prodo, the previous messages are changed to Prodo as follows.
+When Muzi comes back in again with the new nickname, Prodo, the previous messages are changed to Prodo as follows:
 
-"Prodo came in." "Prodo came in." "Prodo has left." "Prodo came in."
+> "Prodo came in." "Prodo came in." "Prodo has left." "Prodo came in."
 
 Since the chat allows duplicate nicknames, there are currently two people in the chat who use the nickname, Prodo. Now, when Prodo (the second person) changes his nickname to Ryan, the chat message is changed as follows:
 
